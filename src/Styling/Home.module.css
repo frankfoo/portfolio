@@ -1,0 +1,123 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("../Images/homeBackground2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  height: 15%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.logo {
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar li {
+  list-style-type: none;
+  padding-left: 3vw;
+}
+
+.navBar a,
+.navBar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* BODY */
+.body {
+  height: 85%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+
+  font-size: 1.8em;
+  border-top: 1px solid white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bodyText {
+  padding-bottom: 3vh;
+}
+
+.name {
+  display: inline;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* BODY -> LINKS*/
+.links {
+  font-size: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.links li {
+  list-style-type: none;
+  padding-right: 2vw;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: 1.1em;
+  }
+  .body {
+    justify-content: space-evenly;
+  }
+  .bodyText {
+    padding-bottom: 0px;
+  }
+  .bodyText p {
+    padding-bottom: 1.5vh;
+  }
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .links li {
+    padding-right: 0px;
+    padding-bottom: 1.5vh;
+  }
+  .dash {
+    display: none;
+  }
+}

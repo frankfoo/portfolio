@@ -1,0 +1,162 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Generic Box */
+.box {
+  border: 1px solid grey;
+  height: 25%;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.box:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border: none;
+  transform: scale(1.02);
+  transition: 0.7s;
+}
+
+.title {
+  padding-top: 4vh;
+  padding-bottom: 1.5vh;
+  font-size: 2em;
+}
+
+/* Box on hover */
+.box1:hover {
+  background-image: url("../Images/hover4.jpg");
+}
+.box2:hover {
+  background-image: url("../Images/hover3.jpg");
+}
+.box3:hover {
+  background-image: url("../Images/image_part_003.jpg");
+}
+.box4:hover {
+  background-image: url("../Images/image_part_004.jpg");
+}
+
+/* Box 1 */
+.box1 {
+  composes: box;
+}
+
+.box1 p {
+  line-height: 2.2;
+}
+
+/* Box 2 */
+.box2 {
+  composes: box;
+}
+
+.box2 p {
+  line-height: 2.2;
+}
+
+/* Box 3 */
+.box3 {
+  composes: box;
+}
+
+.skillsTitle {
+  composes: title;
+  padding-bottom: 4vh;
+}
+
+.logosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skillBox {
+  display: flex;
+  align-items: center;
+  margin-right: 3vw;
+}
+
+.logo {
+  height: 35px;
+  width: 50px;
+}
+
+/* Box 4 */
+.box4 {
+  composes: box;
+}
+
+.box4 p {
+  line-height: 1.8;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+  .box1 p {
+    line-height: 1.8;
+  }
+  .box4 p {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    font-size: 0.9em;
+  }
+  .title {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logosContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vh;
+  }
+  .skillsTitle {
+    padding-bottom: 2vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 0.8em;
+  }
+  .box2 p,
+  .box4 p {
+    line-height: 1.8;
+  }
+}
+/* iPhone */
+@media screen and (max-width: 400px) {
+  .container {
+    font-size: 0.65em;
+  }
+  .box2 p,
+  .box4 p {
+    line-height: 1.8;
+  }
+  .logosContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vh;
+  }
+  .skillsTitle {
+    padding-bottom: 2vh;
+  }
+}
