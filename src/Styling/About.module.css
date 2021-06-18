@@ -143,9 +143,9 @@
   }
 }
 /* iPhone */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .container {
-    font-size: 0.65em;
+    font-size: 0.75em;
   }
   .box2 p,
   .box4 p {
@@ -158,5 +158,8 @@
   }
   .skillsTitle {
     padding-bottom: 2vh;
+  }
+  .title {
+    padding-top: 2vh;
   }
 }
