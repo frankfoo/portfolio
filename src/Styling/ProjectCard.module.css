@@ -128,4 +128,7 @@
   .titleCard p {
     font-size: 1.6em;
   }
+  .container {
+    padding: 5vw;
+  }
 }

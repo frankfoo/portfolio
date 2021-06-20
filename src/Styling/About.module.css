@@ -99,7 +99,6 @@
 /* Box 4 */
 .box4 {
   composes: box;
-  border-bottom: 0px;
 }
 
 .box4 p {

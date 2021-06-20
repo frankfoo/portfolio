@@ -12,7 +12,7 @@ function Projects({projectLink}) {
       <h2 className={styles.title}>Projects_</h2>
       <div className={styles.gridBox}>
         <ProjectCard title="Portfolio Website" desc={portDesc} link={portLink}/>
-        <ProjectCard title="Ozbargain Tracker" desc={ozDesc} link={"ozLink"}/>
+        <ProjectCard title="Ozbargain Tracker" desc={ozDesc} link={ozLink}/>
         <ProjectCard title="More to come..." desc={"..."} link={"..."}/>
       </div>
     </div>
