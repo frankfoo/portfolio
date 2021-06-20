@@ -1,8 +1,64 @@
 .container {
   height: 100%;
   width: 100%;
-
-  background-color: coral;
+  color: white;
 
   display: flex;
+  flex-direction: column;
+
+  background-image: url("../Images/project2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  padding: 1vw 8vw 1vw;
+
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+  font-size: 2.5em;
+  border-bottom: 1px solid white;
+}
+
+.gridBox {
+  height: 90%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5vw;
+
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+  .gridBox {
+    grid-gap: 3vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 2em;
+  }
+  .gridBox {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: 2em;
+  }
+  .gridBox {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
 }

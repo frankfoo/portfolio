@@ -131,6 +131,13 @@
   .skillsTitle {
     padding-bottom: 2vh;
   }
+  .box p {
+    font-size: 0.95em;
+  }
+  .logo {
+    height: 30px;
+    width: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {

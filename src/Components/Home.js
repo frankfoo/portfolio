@@ -8,10 +8,10 @@ function Home({aboutLink, projectLink}) {
         <h1 className={styles.logo}>FRANK FOO_</h1>
         <ul className={styles.navBar}>
           <li>
-            <a onClick={()=>{aboutLink.current.scrollIntoView()}}>ABOUT</a>
+            <a onClick={()=>{projectLink.current.scrollIntoView()}}>PROJECTS</a>
           </li>
           <li>
-            <a onClick={()=>{projectLink.current.scrollIntoView()}}>PROJECTS</a>
+            <a onClick={()=>{aboutLink.current.scrollIntoView()}}>ABOUT</a>
           </li>
           </ul>
       </div>

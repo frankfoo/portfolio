@@ -21,7 +21,7 @@ function About({aboutLink}) {
       </div>
       <div className={styles.box2}>
         <h2 className={styles.title}>Interests & Hobbies</h2>
-        <p>I play casual basketball on the weekend with friends, although I'm not very good!</p>
+        <p>I play casual basketball on the weekend with friends, although I'm not very good</p>
         <p>I love films, especially science fiction/thriller films. My top 3 would be: Prestige, Arrival, Blade Runner 2049</p>
         <p>I follow anything tech related e.g. latest laptops/phones/gpus being released</p>
       </div>

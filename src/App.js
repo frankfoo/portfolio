@@ -10,8 +10,8 @@ function App() {
   return (
     <main className={styles.container}>
       <Home aboutLink={aboutRef} projectLink={projectRef}/>
-      <About aboutLink={aboutRef} />
       <Projects projectLink={projectRef}/>
+      <About aboutLink={aboutRef} />
     </main>
   );
 }
