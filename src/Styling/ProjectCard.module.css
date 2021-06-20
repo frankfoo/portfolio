@@ -16,7 +16,7 @@
 }
 
 .titleCard:hover {
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition-duration: 0.8s;
 }
 
@@ -58,12 +58,39 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .infoBoxDesc {
-    font-size: 0.7em;
+    font-size: 1em;
+  }
+  .infoBoxLink {
+    font-size: 1em;
+  }
+  .titleCard:hover {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .infoBoxDesc {
+    font-size: 0.65em;
   }
   .infoBoxLink {
     font-size: 0.7em;
+  }
+  .titleCard:hover {
+    font-size: 1.05em;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .infoBoxDesc {
+    font-size: 0.6em;
+  }
+  .infoBoxLink {
+    font-size: 0.7em;
+  }
+  .titleCard {
+    font-size: 0.85em;
   }
 }
 
@@ -73,6 +100,9 @@
   }
   .infoBoxLink {
     font-size: 0.8em;
+  }
+  .titleCard {
+    font-size: 0.75em;
   }
 }
 
