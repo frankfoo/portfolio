@@ -6,6 +6,7 @@
   padding: 2vw;
 
   cursor: pointer;
+  min-height: 25vh;
 }
 
 .titleCard {
