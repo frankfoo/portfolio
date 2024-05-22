@@ -15,7 +15,7 @@ function Projects({projectLink}) {
       <div className={styles.gridBox}>
         <ProjectCard title="Portfolio Website" desc={portDesc} link={portLink}/>
         <ProjectCard title="Ozbargain Tracker" desc={ozDesc} link={ozLink}/>
-        <ProjectCard title="Cipher Game" desc={cipherDesc} link={cipherLink} playLink={'https://www.frankfoo.github.io/cipher-game'}/>
+        <ProjectCard title="Cipher Game" desc={cipherDesc} link={cipherLink} playLink={'https://frankfoo.github.io/cipher-game/'}/>
         <ProjectCard title="More to come"></ProjectCard>
       </div>
     </div>
